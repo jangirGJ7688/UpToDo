@@ -11,7 +11,11 @@ import SwiftUI
 struct UpToDoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView{
+                SignInView()
+                    .navigationTitle("Login")
+            }
+            .navigationViewStyle(StackNavigationViewStyle())
         }
     }
 }
