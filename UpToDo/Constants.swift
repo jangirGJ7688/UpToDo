@@ -6,3 +6,18 @@
 //
 
 import Foundation
+import SwiftUI
+
+struct Constants {
+    
+}
+
+
+struct Fonts {
+    static func latoRegularFont(_ size: CGFloat) -> Font {
+        return Font.custom("Lato-Regular", size: size)
+    }
+    static func latoBoldFont(_ size: CGFloat) -> Font {
+        return Font.custom("Lato-Bold", size: size)
+    }
+}

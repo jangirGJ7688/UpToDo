@@ -8,8 +8,26 @@
 import SwiftUI
 
 struct MainView: View {
+    
+    @EnvironmentObject var session: SessionManager
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            switch session.currentState {
+            case .onboarding:
+                OnboardingContrainerView(action: session.completeOnbording)
+            case .login:
+                StartScreenView(action: session.completeLogin)
+            case .deshboard:
+                HomeView()
+            default:
+                EmptyView()
+            }
+        }
+        .animation(.easeInOut, value: session.currentState)
+        .onAppear {
+            session.configureCurrentState()
+        }
     }
 }
 

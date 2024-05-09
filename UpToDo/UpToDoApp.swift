@@ -6,16 +6,23 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct UpToDoApp: App {
+    
+    @StateObject private var session = SessionManager()
+    
+    init() {
+        FirebaseApp.configure()
+    }
+    
     var body: some Scene {
         WindowGroup {
-            NavigationView{
-                SignInView()
-                    .navigationTitle("Login")
+            NavigationStack {
+                MainView()
             }
-            .navigationViewStyle(StackNavigationViewStyle())
+            .environmentObject(session)
         }
     }
 }
