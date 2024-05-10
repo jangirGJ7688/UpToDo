@@ -34,6 +34,13 @@
 		B46B34E42BED22FC00B26D84 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B46B34E32BED22FC00B26D84 /* GoogleService-Info.plist */; };
 		B46B34E72BED242200B26D84 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = B46B34E62BED242200B26D84 /* GoogleSignIn */; };
 		B46B34E92BED242200B26D84 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B46B34E82BED242200B26D84 /* GoogleSignInSwift */; };
+		B46B34F32BED4A6100B26D84 /* IndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46B34F22BED4A6100B26D84 /* IndexView.swift */; };
+		B46B34F52BED4A8200B26D84 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46B34F42BED4A8200B26D84 /* CalendarView.swift */; };
+		B46B34F72BED4A9300B26D84 /* FocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46B34F62BED4A9300B26D84 /* FocusView.swift */; };
+		B46B34F92BED4AA400B26D84 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46B34F82BED4AA400B26D84 /* ProfileView.swift */; };
+		B46B34FB2BEE216200B26D84 /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46B34FA2BEE216200B26D84 /* TabbarView.swift */; };
+		B46B35172BEE8BAF00B26D84 /* TabItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46B35162BEE8BAF00B26D84 /* TabItemModel.swift */; };
+		B46B35192BEE8BDA00B26D84 /* TabbarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46B35182BEE8BDA00B26D84 /* TabbarViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +68,13 @@
 		B46B34DF2BEBFAD800B26D84 /* SignupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupModel.swift; sourceTree = "<group>"; };
 		B46B34E12BECE59D00B26D84 /* PasswordResetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetView.swift; sourceTree = "<group>"; };
 		B46B34E32BED22FC00B26D84 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B46B34F22BED4A6100B26D84 /* IndexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexView.swift; sourceTree = "<group>"; };
+		B46B34F42BED4A8200B26D84 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		B46B34F62BED4A9300B26D84 /* FocusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusView.swift; sourceTree = "<group>"; };
+		B46B34F82BED4AA400B26D84 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		B46B34FA2BEE216200B26D84 /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
+		B46B35162BEE8BAF00B26D84 /* TabItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItemModel.swift; sourceTree = "<group>"; };
+		B46B35182BEE8BDA00B26D84 /* TabbarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +113,7 @@
 		B46B349A2BE66BC300B26D84 /* UpToDo */ = {
 			isa = PBXGroup;
 			children = (
+				B46B34F12BED4A4C00B26D84 /* Tabbar */,
 				B46B34EE2BED3F3400B26D84 /* Onboarding */,
 				B46B34CE2BE933C200B26D84 /* Authentication */,
 				B46B34BA2BE9043B00B26D84 /* Fonts */,
@@ -134,6 +149,10 @@
 		B46B34AA2BE6B4CC00B26D84 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B46B34F22BED4A6100B26D84 /* IndexView.swift */,
+				B46B34F42BED4A8200B26D84 /* CalendarView.swift */,
+				B46B34F62BED4A9300B26D84 /* FocusView.swift */,
+				B46B34F82BED4AA400B26D84 /* ProfileView.swift */,
 				B46B34B82BE8C34100B26D84 /* HomeView.swift */,
 				B46B34D52BEB538900B26D84 /* MainView.swift */,
 			);
@@ -219,6 +238,40 @@
 				B46B34B42BE8AA9700B26D84 /* OnboardingContrainerView.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		B46B34F12BED4A4C00B26D84 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				B46B351A2BEE8D1500B26D84 /* Model */,
+				B46B351C2BEE8D2B00B26D84 /* View */,
+				B46B351B2BEE8D2300B26D84 /* ViewModel */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		B46B351A2BEE8D1500B26D84 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B46B35162BEE8BAF00B26D84 /* TabItemModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B46B351B2BEE8D2300B26D84 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B46B35182BEE8BDA00B26D84 /* TabbarViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B46B351C2BEE8D2B00B26D84 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B46B34FA2BEE216200B26D84 /* TabbarView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,15 +365,22 @@
 				B46B34B12BE8197600B26D84 /* OnboardingItem.swift in Sources */,
 				B46B34AF2BE80BEA00B26D84 /* SignupView.swift in Sources */,
 				B46B34E02BEBFAD800B26D84 /* SignupModel.swift in Sources */,
+				B46B35172BEE8BAF00B26D84 /* TabItemModel.swift in Sources */,
 				B46B34D02BE933E500B26D84 /* AuthenticationManager.swift in Sources */,
 				B46B34D82BEB53B200B26D84 /* SessionManager.swift in Sources */,
+				B46B34F72BED4A9300B26D84 /* FocusView.swift in Sources */,
 				B46B34B72BE8BE8A00B26D84 /* StartScreenView.swift in Sources */,
 				B46B34AD2BE7FE3B00B26D84 /* SignInView.swift in Sources */,
 				B46B34B92BE8C34100B26D84 /* HomeView.swift in Sources */,
+				B46B34F52BED4A8200B26D84 /* CalendarView.swift in Sources */,
 				B46B34B32BE81A2100B26D84 /* OnboardingView.swift in Sources */,
+				B46B35192BEE8BDA00B26D84 /* TabbarViewModel.swift in Sources */,
+				B46B34F32BED4A6100B26D84 /* IndexView.swift in Sources */,
+				B46B34FB2BEE216200B26D84 /* TabbarView.swift in Sources */,
 				B46B34DA2BEBFA1800B26D84 /* SigninViewModel.swift in Sources */,
 				B46B349C2BE66BC300B26D84 /* UpToDoApp.swift in Sources */,
 				B46B34DE2BEBFAB600B26D84 /* SigninModel.swift in Sources */,
+				B46B34F92BED4AA400B26D84 /* ProfileView.swift in Sources */,
 				B46B34C32BE906D300B26D84 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

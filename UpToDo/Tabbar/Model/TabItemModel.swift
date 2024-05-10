@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct TabItem: Hashable {
+struct TabItemModel: Hashable {
     let tabname: String
     let imagename: String
 }

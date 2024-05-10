@@ -10,10 +10,10 @@ import Foundation
 final class TabbarViewModel: ObservableObject {
     
     let tabItems = [
-        TabItem(tabname: "Index", imagename: "house"),
-        TabItem(tabname: "Calendar", imagename: "calendar"),
-        TabItem(tabname: "Focus", imagename: "clock"),
-        TabItem(tabname: "Profile", imagename: "person.crop.circle")
+        TabItemModel(tabname: "Index", imagename: "house"),
+        TabItemModel(tabname: "Calendar", imagename: "calendar"),
+        TabItemModel(tabname: "Focus", imagename: "clock"),
+        TabItemModel(tabname: "Profile", imagename: "person.crop.circle")
     ]
     
     func addItem() {

@@ -94,6 +94,7 @@ struct SignInView: View {
         if !viewModel.isValidUser { return }
         viewModel.signInUser()
         if !viewModel.isValidUser { return }
+        action()
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
             isSignupActive = false
             isSignInActive = false
